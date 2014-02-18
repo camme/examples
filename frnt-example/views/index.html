@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOO</title>
+    <style>
+        body {
+            background-color: #aaa;
+            color: white;
+            font-family: arial, sans-serif;
+            margin: 20%;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="blog-list">
+        {{~it.posts: post}}
+        <div class="article-holder post">
+            <h2><a href="{{= post.permalink}}">{{= post.post_title}}</a></h2>
+        </div>
+        {{~}}
+    </section>
+</body>
+</html>
